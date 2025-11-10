@@ -49,9 +49,10 @@ export default function PostCard({ post }) {
     }
   };
 
-  useEffect(() => {
-    fetchComments();
-  }, []);
+ useEffect(() => {
+  fetchComments();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   return (
     <motion.div
